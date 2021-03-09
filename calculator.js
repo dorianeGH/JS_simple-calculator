@@ -1,12 +1,15 @@
 console.log('Hello World')
 
-const firstValue = prompt('what is the first value ?')
+const firstValue = parseInt(prompt('what is the first value ?'));
 const operator = prompt('what is the operator ?')
-const secondValue =prompt('what is the second value ?')
+const secondValue = parseInt(prompt('what is the second value ?'));
 
-console.log(firstValue)
-console.log(operator)
-console.log(secondValue)
+if (operator === "+"){
+    console.log(firstValue + secondValue)
+}
+else {
+    console.log(firstValue - secondValue)
+}
 
 
 
