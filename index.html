@@ -9,11 +9,16 @@
 </head>
 <body>
     <h1>Hello each of you !</h1>
-    <label for="userResponseFirst">First Answer</label>
-    <label for="userResponseSecond">Second Answer</label>
-        <input type = "number" id ="userResponseFirst"> 
-        <input type = "number" id ="userResponseSecond"> 
-        <select>
+    <div>
+        <label for="userResponseFirst">First Answer</label>  
+        <input type = "number" name ="userResponseFirst" id ="userResponseFirst" min="0" max="100" required>  
+    </div>
+    <div>
+        <label for="userResponseSecond">Second Answer</label>
+        <input type = "number" name = "userResponseSecond" id ="userResponseSecond" min="0" max="100" required> 
+    </div>
+        <label for="operateur">Second Answer</label>
+        <select name= "operateur" id="operateur">
             <option value ="+">+</option>
             <option value ="-">-</option>
             <option value ="*">*</option>
