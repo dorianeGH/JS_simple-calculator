@@ -20,6 +20,10 @@ alert (resultat);*/
 //const userResponseFirst = parseInt(document.getElementById('userResponseFirst').value);
 //const userResponseSecond = parseInt(document.getElementById('userResponseSecond').value);
 
+
+const btnCalul = document.getElementById("btnCalcul"); //prend en charge btn sur ma charge 
+btnCalul.addEventListener('click', event =>{//on lui donne maintenant un comportement
+
 const userResponseFirst = document.getElementById('userResponseFirst');
 const userResponseSecond = document.getElementById('userResponseSecond');
 const ope = document.getElementById('operateur');
@@ -40,4 +44,7 @@ if (operateur === "+"){
     resultat = premierNombre / secondNombre;
 }
 
-alert (resultat);
+//console.log(resultat); //changé alert pr console, voit pu le resultat // on peut le supprimer grace au getelement
+const printResult = document.getElementById("resultat") // balise b "resultat" de html
+printResult.innerHTML = resultat //fait apparaitre le resultat dans html
+});
